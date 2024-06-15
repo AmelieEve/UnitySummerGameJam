@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sandboxes/LeoSandbox-NextLevel.unity
     guid: a8b4e227a4d952f4f88136f5800a5edf
+  - enabled: 1
+    path: Assets/Scenes/Tutorial-Leo.unity
+    guid: 18a71f044815bd84ba1464c05f49cc0d
   m_configObjects: {}
