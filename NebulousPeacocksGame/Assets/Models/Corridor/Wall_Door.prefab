@@ -96,6 +96,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorWall
       objectReference: {fileID: 0}
+    - target: {fileID: 2424615462666243310, guid: 2d05bc7f737809e4da8a105d74f437e6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424615462666243310, guid: 2d05bc7f737809e4da8a105d74f437e6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2424615462666243310, guid: 2d05bc7f737809e4da8a105d74f437e6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3016770960496193982, guid: 2d05bc7f737809e4da8a105d74f437e6, type: 3}
       propertyPath: m_IsActive
       value: 1
