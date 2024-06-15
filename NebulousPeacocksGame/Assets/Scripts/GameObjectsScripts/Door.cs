@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    public GameObject player = null;
     public bool isOpenForbidden = false;
     public ForbiddenAction forbiddenAction = null;
 
     private bool isPlayerNearby = false;
-    private bool isOpen = false;
 
     void Start()
     {
@@ -15,13 +15,17 @@ public class Door : MonoBehaviour
         {
             Debug.LogError("ForbiddenAction is not set in the inspector!");
         }
+        if (player == null)
+        {
+            Debug.LogError("Player is not set in the inspector!");
+        }
     }
 
     void Update()
     {
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            isOpen = true;
+            Debug.Log("Player open the door");
             if (isOpenForbidden)
             {
                 forbiddenAction.isActionTriggered = true;
@@ -31,7 +35,7 @@ public class Door : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject == player)
         {
             isPlayerNearby = true;
         }
@@ -39,7 +43,7 @@ public class Door : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.gameObject == player)
         {
             isPlayerNearby = false;
         }
