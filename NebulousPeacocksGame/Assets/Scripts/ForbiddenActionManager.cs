@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ForbiddenActionManager : MonoBehaviour
 {
     public ForbiddenAction forbiddenAction;
+    public string failedActionSceneName = "FailedActionScene";
 
     void Start()
     {
@@ -28,5 +30,6 @@ public class ForbiddenActionManager : MonoBehaviour
         Debug.Log($"Forbidden action triggered: {forbiddenAction.actionName} : {forbiddenAction.description}");
         
         // Add scene transition logic here
+        SceneManager.LoadScene(failedActionSceneName);
     }
 }
