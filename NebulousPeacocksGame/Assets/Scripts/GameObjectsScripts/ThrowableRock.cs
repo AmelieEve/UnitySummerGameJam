@@ -53,7 +53,7 @@ public class ThrowableRock : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Breakable"))
+        if (collision.gameObject.CompareTag("RockDestroyable"))
         {
             Destroy(collision.gameObject);
         }
