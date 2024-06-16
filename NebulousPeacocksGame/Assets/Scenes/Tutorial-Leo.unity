@@ -221,6 +221,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -1522444869540694022, guid: 2d05bc7f737809e4da8a105d74f437e6, type: 3}
+    - target: {fileID: 4515474959885141318, guid: c848f6ab6b1e2124a9669a85f6868fc2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515474959885141318, guid: c848f6ab6b1e2124a9669a85f6868fc2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.06
+      objectReference: {fileID: 0}
     - target: {fileID: 6068857612706148495, guid: c848f6ab6b1e2124a9669a85f6868fc2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -265,10 +273,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4205741240996404516, guid: 17c0d9d17243d5b48a9a634bb4dc4448, type: 3}
+    - target: {fileID: 6694792074717573090, guid: c848f6ab6b1e2124a9669a85f6868fc2, type: 3}
+      propertyPath: m_TagString
+      value: RockDestroyable
+      objectReference: {fileID: 0}
     - target: {fileID: 7770871836586801816, guid: c848f6ab6b1e2124a9669a85f6868fc2, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 4205741240996404516, guid: 17c0d9d17243d5b48a9a634bb4dc4448, type: 3}
+    - target: {fileID: 8258957602914591290, guid: c848f6ab6b1e2124a9669a85f6868fc2, type: 3}
+      propertyPath: m_TagString
+      value: RockDestroyable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 5052233665004681127, guid: c848f6ab6b1e2124a9669a85f6868fc2, type: 3}
