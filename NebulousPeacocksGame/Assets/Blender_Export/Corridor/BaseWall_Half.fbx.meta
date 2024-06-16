@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: c0ef92a2c5ba68842a40813b2872c0b4
+guid: d465b896024ff7a45a43f0eb9dbdfcf6
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default
+    second: {fileID: 2100000, guid: 481ddc5b857f91b4083b437b9aad084e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light
+    second: {fileID: 2100000, guid: 13e3da38d00412e4bb90dda4d4244ab8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orange
+    second: {fileID: 2100000, guid: 96e5dd689b9643347bdf969fec28dc91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 0b9681988292bb54dae61a91f9cb3e3c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
