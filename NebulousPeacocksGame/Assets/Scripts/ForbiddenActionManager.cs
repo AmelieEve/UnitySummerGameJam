@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using Kino;
 
 public class ForbiddenActionManager : MonoBehaviour
 {
@@ -21,14 +23,27 @@ public class ForbiddenActionManager : MonoBehaviour
     {
         if (forbiddenAction != null && forbiddenAction.isActionTriggered)
         {
-            HandleForbiddenAction();
+            StartCoroutine(HandleForbiddenAction());
+            forbiddenAction.isActionTriggered = false;
         }
     }
 
-    private void HandleForbiddenAction()
+    private IEnumerator HandleForbiddenAction()
     {
+        // Get player
+        GameObject gameObject = GameObject.FindWithTag("Player");
+
         Debug.Log($"Forbidden action triggered: {forbiddenAction.actionName} : {forbiddenAction.description}");
         
+        // Disable player movement
+        gameObject.GetComponentInChildren<PlayerController>().enabled = false;
+
+        // Add glich effect here
+        gameObject.GetComponentInChildren<DigitalGlitch>().intensity = 0.5f;
+
+        // Wait for 2 seconds
+        yield return new WaitForSeconds(2);
+
         // Add scene transition logic here
         SceneManager.LoadScene(failedActionSceneName);
     }
