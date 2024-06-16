@@ -74,4 +74,9 @@ public class ThrowableRock : MonoBehaviour
             canPickUp = false;
         }
     }
+
+    public bool GetIsHeld()
+    {
+        return isHeld;
+    }
 }
