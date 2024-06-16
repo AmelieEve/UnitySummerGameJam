@@ -97,6 +97,18 @@ PrefabInstance:
       value: BaseWall
       objectReference: {fileID: 0}
     - target: {fileID: 3618533067384327152, guid: c3c1789849897404596cecaf78b43828, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.046
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618533067384327152, guid: c3c1789849897404596cecaf78b43828, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618533067384327152, guid: c3c1789849897404596cecaf78b43828, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618533067384327152, guid: c3c1789849897404596cecaf78b43828, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
