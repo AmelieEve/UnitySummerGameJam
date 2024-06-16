@@ -1,21 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RitualManager : MonoBehaviour
 {
-    public ForbiddenAction forbiddenAction;
+    [HideInInspector]
+    public bool presentedToGlyph;
+    public ThrowableRock sacredObject;
 
-    private bool purified;
-    private bool holdSacredObject;
-
-    public bool isRitualCompleted()
+    public bool IsRitualCompleted()
     {
-        return (purified && holdSacredObject);
-    }
-
-    void Update()
-    {
-
+        return (presentedToGlyph && sacredObject.GetIsHeld());
     }
 }
