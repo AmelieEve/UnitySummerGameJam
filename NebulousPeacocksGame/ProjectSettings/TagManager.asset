@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - RockDestroyable
+  - RoBo
   layers:
   - Default
   - TransparentFX
