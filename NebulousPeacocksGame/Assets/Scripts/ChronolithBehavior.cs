@@ -6,16 +6,15 @@ public class ChronolithInteraction : MonoBehaviour
     public string nextSceneName = "NextLevel"; // Nom de la scène vers laquelle téléporter le joueur
     public float interactionDistance = 3.0f; // Distance d'interaction avec le Chronolith
 
-    public GameObject player = null;
-
+    private GameObject player; // Référence au joueur
     void Start()
     {
-
+        player = GameObject.FindWithTag("Player");
     }
 
     void Update()
     {
-        if (player != null && Vector3.Distance(transform.position, player.transform.position) < interactionDistance)
+        if (Vector3.Distance(transform.position, player.transform.position) < interactionDistance)
         {
             TeleportPlayer();
         }
