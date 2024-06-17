@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class RobotBehavior : MonoBehaviour
@@ -5,6 +6,7 @@ public class RobotBehavior : MonoBehaviour
     private Transform player; // Référence au joueur
     public float speed = 5.0f; // Vitesse de déplacement du robot
     public float stoppingDistance = 2.0f; // Distance à laquelle le robot s'arrête
+    public TextMeshProUGUI helpTextUI; // Référence à l'élément de texte UI
 
     private AudioSource audioSource;
 
@@ -46,6 +48,10 @@ public class RobotBehavior : MonoBehaviour
         {
             audioSource.clip = roboHelp.audioClip;
             audioSource.Play();
+            // Incrémenter le compteur d'aide
+            roboHelp.IncrementHelpCount();
+            // Mettre à jour le texte d'aide dans l'interface utilisateur
+            helpTextUI.text = roboHelp.helpText;
         }
         else
         {
