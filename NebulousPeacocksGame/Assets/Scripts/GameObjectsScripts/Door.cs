@@ -7,6 +7,8 @@ public class Door : MonoBehaviour
     public bool isOpenForbidden = false;
     public ForbiddenAction forbiddenAction = null;
 
+    public RoboHelp roboHelp;
+
     private bool isPlayerNearby = false;
 
     void Start()
@@ -29,6 +31,15 @@ public class Door : MonoBehaviour
             if (isOpenForbidden)
             {
                 forbiddenAction.isActionTriggered = true;
+
+                if (roboHelp.HelpCount % 3 == 0)
+                {
+                    RobotBehavior robotBehavior = GameObject.FindWithTag("RoBo").GetComponent<RobotBehavior>();
+                    robotBehavior.PlayRoboHelp(roboHelp);
+                } else
+                {
+                    roboHelp.IncrementHelpCount();
+                }
             }
         }
     }
