@@ -32,5 +32,27 @@ public class PlayerController : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
         }
+
+        //Jump
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
+    }
+
+    void Jump()
+    {
+        // Vérifier si le joueur est au sol
+        if (IsGrounded())
+        {
+            // Ajouter une force vers le haut pour sauter
+            GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.Impulse);
+        }
+    }
+
+    bool IsGrounded()
+    {
+        // Raycast vers le bas pour vérifier si le joueur est au sol
+        return Physics.Raycast(transform.position, Vector3.down, 1.1f);
     }
 }

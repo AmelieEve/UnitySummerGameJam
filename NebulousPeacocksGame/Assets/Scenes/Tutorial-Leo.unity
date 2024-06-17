@@ -645,7 +645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heldOffset: {x: 0, y: 0, z: 1}
-  throwForce: 10
+  throwForce: 30
   player: {fileID: 1038997795}
 --- !u!65 &1286309965
 BoxCollider:
