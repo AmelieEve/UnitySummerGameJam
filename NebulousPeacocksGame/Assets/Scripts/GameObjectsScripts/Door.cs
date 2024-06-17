@@ -32,10 +32,13 @@ public class Door : MonoBehaviour
             {
                 forbiddenAction.isActionTriggered = true;
 
-                if (roboHelp != null && roboHelp.HelpCount == 0)
+                if (roboHelp.HelpCount % 3 == 0)
                 {
                     RobotBehavior robotBehavior = GameObject.FindWithTag("RoBo").GetComponent<RobotBehavior>();
                     robotBehavior.PlayRoboHelp(roboHelp);
+                } else
+                {
+                    roboHelp.IncrementHelpCount();
                 }
             }
         }

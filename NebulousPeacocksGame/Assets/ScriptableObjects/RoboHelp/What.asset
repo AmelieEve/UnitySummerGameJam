@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   helpText: What's going on?
   audioClip: {fileID: 8300000, guid: a09644d8569bcbd438234a9850902dd7, type: 3}
+  helpCount: 0
