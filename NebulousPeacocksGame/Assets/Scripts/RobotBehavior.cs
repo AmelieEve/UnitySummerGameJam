@@ -6,10 +6,15 @@ public class RobotBehavior : MonoBehaviour
     public float speed = 5.0f; // Vitesse de déplacement du robot
     public float stoppingDistance = 2.0f; // Distance à laquelle le robot s'arrête
 
+    private AudioSource audioSource;
+
     void Start()
     {
         // Trouver le joueur par son tag
         player = GameObject.FindWithTag("Player").transform;
+
+        // Ajouter un composant AudioSource au robot si ce n'est pas déjà fait
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     void Update()
@@ -32,6 +37,19 @@ public class RobotBehavior : MonoBehaviour
                 // Optionnel : faire pivoter le robot pour qu'il fasse face au joueur
                 transform.LookAt(player);
             }
+        }
+    }
+
+    public void PlayRoboHelp(RoboHelp roboHelp)
+    {
+        if (roboHelp != null && roboHelp.audioClip != null)
+        {
+            audioSource.clip = roboHelp.audioClip;
+            audioSource.Play();
+        }
+        else
+        {
+            Debug.LogWarning("RoboHelp or audioClip is null.");
         }
     }
 
