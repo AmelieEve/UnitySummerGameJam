@@ -489,6 +489,10 @@ PrefabInstance:
       propertyPath: nextSceneName
       value: Tutorial-Leo
       objectReference: {fileID: 0}
+    - target: {fileID: 3471045372910207069, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.46
+      objectReference: {fileID: 0}
     - target: {fileID: 4577232256095229146, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.45375
@@ -527,6 +531,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4577232256095229146, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452961757332992509, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
+      propertyPath: m_Range
+      value: 7.9503813
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452961757332992509, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452961757332992509, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
+      propertyPath: m_Color.g
+      value: 0.65326643
+      objectReference: {fileID: 0}
+    - target: {fileID: 6452961757332992509, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
+      propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9189222695907784245, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
