@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21108195, g: 0.05813718, b: 0.03601958, a: 1}
+  m_IndirectSpecularColor: {r: 0.21108171, g: 0.05813721, b: 0.036018983, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: cdd1b68ee47b14a449520f225ea08ac1, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -755,6 +755,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1038997795}
+    - target: {fileID: 2099397731993614674, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
+      propertyPath: nextSceneName
+      value: Ancient01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099397731993614674, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
+      propertyPath: interactionDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4577232256095229146, guid: d26c2ebc39c29804d91b8dbcbb60c289, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.04
@@ -1094,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forbiddenAction: {fileID: 11400000, guid: c629b58aaa07c3a49b7bcb0c916d66a1, type: 2}
-  failedActionSceneName: Tutorial-Leo
+  failedActionSceneName: Ancient01
 --- !u!222 &1902604121
 CanvasRenderer:
   m_ObjectHideFlags: 0
