@@ -11,6 +11,9 @@ public class RitualManager : MonoBehaviour
 
     public bool IsRitualCompleted()
     {
-        return ((requireGlyph && presentedToGlyph) || (requireSacredObject && sacredObject.GetIsHeld()));
+        bool completed = true;
+        if (requireGlyph) completed = completed && presentedToGlyph;
+        if (requireSacredObject) completed = completed && sacredObject.GetIsHeld();
+        return completed;
     }
 }
