@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial-Leo.unity
     guid: 18a71f044815bd84ba1464c05f49cc0d
+  - enabled: 1
+    path: Assets/Scenes/Ancient01.unity
+    guid: b6ef5a5809f782a4ebd11d3b1d3da08a
+  - enabled: 1
+    path: Assets/Scenes/Ancient02.unity
+    guid: 460d48fe97e3e5d4b926d5c2815af0ec
   m_configObjects: {}
