@@ -4865,7 +4865,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -5120,6 +5120,10 @@ PrefabInstance:
     - target: {fileID: 464864047505140176, guid: 819a9ff983f937d44b28fc2de63da830, type: 3}
       propertyPath: m_Name
       value: terrain
+      objectReference: {fileID: 0}
+    - target: {fileID: 464864047505140176, guid: 819a9ff983f937d44b28fc2de63da830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 952607872034059114, guid: 819a9ff983f937d44b28fc2de63da830, type: 3}
       propertyPath: m_LocalScale.x
