@@ -1102,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forbiddenAction: {fileID: 11400000, guid: c629b58aaa07c3a49b7bcb0c916d66a1, type: 2}
-  failedActionSceneName: Ancient01
+  failedActionSceneName: Tutorial-Leo
 --- !u!222 &1902604121
 CanvasRenderer:
   m_ObjectHideFlags: 0
